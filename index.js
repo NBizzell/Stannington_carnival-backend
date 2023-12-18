@@ -31,8 +31,9 @@ app.use(bodyParser.json());
 // app.use(cors());
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
-    // , "https://carnival-app.onrender.com"],
+    origin:
+      // ["http://localhost:3000",
+      ["https://carnival-app.onrender.com"],
   })
 );
 
