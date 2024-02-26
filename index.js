@@ -27,8 +27,9 @@ app.use(helmet());
 // using bodyParser to parse JSON bodies into JS objects
 app.use(bodyParser.json());
 
-// enabling CORS for all requests
-// app.use(cors());
+//enabling CORS for all requests
+app.use(cors());
+
 app.use(
   cors({
     origin: ["https://stannington-frontend.onrender.com"],
